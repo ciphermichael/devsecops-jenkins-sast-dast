@@ -325,6 +325,7 @@
         </execution>
       </executions>  
       <configuration>
+	  	<apiToken>${env.SNYK_TOKEN}</apiToken>
         <org>ciphermichael</org>
       </configuration>
     </plugin>
