@@ -29,7 +29,7 @@ pipeline {
             steps {
                   script{
                         docker.withRegistry('https://362895328443.dkr.ecr.eu-west-1.amazonaws.com', 'ecr:eu-west-1:aws-credentials'){
-                              app.push("lastest")
+                              app.push("latest")
                         }
                   }
             }
