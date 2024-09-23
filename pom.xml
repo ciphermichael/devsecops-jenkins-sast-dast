@@ -326,7 +326,7 @@
       </executions>  
       <configuration>
 	  	<apiToken>${env.SNYK_TOKEN}</apiToken>
-        <org>ciphermichael</org>
+        <org>ciphermichael-5w7jvUfvxg755hjeBt6Nk7</org>
       </configuration>
     </plugin>
 <!-- Snyk Changes for SCA Ends Here -->
