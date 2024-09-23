@@ -310,22 +310,7 @@
       <artifactId>snyk-maven-plugin</artifactId>
       <version>2.0.0</version>
       <inherited>false</inherited>
-	  <executions>
-        <execution>
-          <id>snyk-test</id>
-          <goals>
-            <goal>test</goal>
-          </goals>
-        </execution>
-        <execution>
-          <id>snyk-monitor</id>
-          <goals>
-            <goal>monitor</goal>
-          </goals>
-        </execution>
-      </executions>  
       <configuration>
-	  	<apiToken>${env.SNYK_TOKEN}</apiToken>
         <org>ciphermichael-5w7jvUfvxg755hjeBt6Nk7</org>
       </configuration>
     </plugin>
