@@ -306,34 +306,34 @@
 #By ASecurityGuru
 -->
 <!-- Example Plugin Configuration -->
-	<plugins>
-		<plugin>
-		<groupId>io.snyk</groupId>
-		<artifactId>snyk-maven-plugin</artifactId>
-		<version>2.2.0</version>
-		<inherited>false</inherited>
-		<executions>
-			<execution>
-			<id>snyk-test</id>
-			<goals>
-				<goal>test</goal>
-			</goals>
-			</execution>
-			<execution>
-			<id>snyk-monitor</id>
-			<goals>
-				<goal>monitor</goal>
-			</goals>
-			</execution>
-		</executions>
-		<configuration>
-			<apiToken>${env.SNYK_TOKEN}</apiToken>
-			<args>
-			<arg>--all-projects</arg>
-			</args>
-		</configuration>
-		</plugin>
-	</plugins>
+		<plugins>
+			<plugin>
+			<groupId>io.snyk</groupId>
+			<artifactId>snyk-maven-plugin</artifactId>
+			<version>2.2.0</version>
+			<inherited>false</inherited>
+			<executions>
+				<execution>
+				<id>snyk-test</id>
+				<goals>
+					<goal>test</goal>
+				</goals>
+				</execution>
+				<execution>
+				<id>snyk-monitor</id>
+				<goals>
+					<goal>monitor</goal>
+				</goals>
+				</execution>
+			</executions>
+			<configuration>
+				<apiToken>${env.SNYK_TOKEN}</apiToken>
+				<args>
+				<arg>--all-projects</arg>
+				</args>
+			</configuration>
+			</plugin>
+		</plugins>
 <!-- Snyk Changes for SCA Ends Here -->
 		</plugins>
 		<pluginManagement>
